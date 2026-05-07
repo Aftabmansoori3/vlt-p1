@@ -103,5 +103,5 @@ function initModals() {
 document.addEventListener('DOMContentLoaded', () => {
     updateHeroData();
     initModals();
-    console.log('NexGen IoT - Technical UI Initialized');
+    console.log('Veltronics - Technical UI Initialized');
 });

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veltronics | Enterprise-Grade Hardware & Software Engineering</title>
+    <meta name="description" content="Veltronics provides mission-critical IoT development, embedded systems design, and industrial automation solutions.">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="/" class="logo">
+                <img src="/assets/images/logo.png" alt="Veltronics Logo" style="height: 60px; width: auto;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/industries.html">Industries</a></li>
+                <li><a href="/career.html">Career</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Request Quote</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <!-- Video Background -->
+        <video autoplay muted loop id="heroVideo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; opacity: 0.15;">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-circuit-board-details-4431-large.mp4" type="video/mp4">
+            <!-- User: Replace src with your attached video file name -->
+        </video>
+        
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <div class="mono" style="color: var(--accent-blue); margin-bottom: 1rem;"><span class="pulse-dot"></span>System Status: Operational</div>
+                <h1 style="font-size: 4.5rem; letter-spacing: -2px;"><span class="gradient-text">Veltronics</span> Silicon Intelligence</h1>
+                <p style="font-size: 1.2rem; margin-top: 1.5rem; color: var(--text-secondary); max-width: 550px;">
+                    We design and deploy mission-critical IoT ecosystems. From custom SoC architecture to cloud-native data streams, we bridge the hardware-software divide.
+                </p>
+                <div class="hero-btns" style="margin-top: 2.5rem;">
+                    <a href="/services.html" class="btn btn-primary">Technical Specs</a>
+                    <a href="/contact.html" class="btn btn-outline">Consult an Engineer</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="chip-container" style="background: transparent;">
+                    <!-- User Video Replace Layered Images -->
+                    <video autoplay muted loop playsinline class="hero-chip-video" style="width: 100%; border-radius: var(--border-radius-lg); filter: contrast(1.1);">
+                        <source src="/assets/images/chipchop.mp4" type="video/mp4">
+                    </video>
+                    
+                    <div class="scan-line" style="z-index: 3;"></div>
+                    <div class="data-overlay" style="z-index: 4;">
+                        NX-9000 SERIES<br>
+                        CORE: DUAL 32-BIT<br>
+                        WIRELESS: WIFI/BLE 5.2<br>
+                        STATUS: ACTIVE
+                    </div>
+                </div>
+                <div class="floating-card glass" style="top: -20px; right: -20px; padding: 1rem 1.5rem; z-index: 5;">
+                    <span class="mono" style="font-size: 0.65rem; display: block; margin-bottom: 4px;">Latency</span>
+                    <span style="font-weight: 700; color: var(--accent-blue);">0.45ms</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-overview section-padding" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3rem; max-width: 700px;">Core Engineering <span class="gradient-text">Capabilities</span></h2>
+                <p style="color: var(--text-secondary); font-size: 1.2rem; margin-top: 1rem;">End-to-end hardware development and software integration services.</p>
+            </div>
+            <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                <div class="service-card reveal" style="padding: 3rem; border-radius: var(--border-radius-md);">
+                    <i data-lucide="microscope" style="width: 40px; height: 40px; color: var(--accent-blue); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">IoT Development</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Architecting end-to-end IoT ecosystems that connect billions of devices with actionable data.</p>
+                    <div class="mono" style="margin-top: 1.5rem;">
+                        <div class="clickable-point" data-detail="IOT_SECURE" data-title="Secure Bootstrapping">
+                            <i data-lucide="plus"></i> <span>Secure Bootstrapping</span>
+                        </div>
+                        <div class="clickable-point" data-detail="IOT_OTA" data-title="Over-the-Air (OTA) Updates">
+                            <i data-lucide="plus"></i> <span>Over-the-Air (OTA)</span>
+                        </div>
+                        <div class="clickable-point" data-detail="IOT_EDGE" data-title="Edge Computing Logic">
+                            <i data-lucide="plus"></i> <span>Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="padding: 3rem; border-radius: var(--border-radius-md);">
+                    <i data-lucide="circuit-board" style="width: 40px; height: 40px; color: var(--accent-cyan); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Embedded Systems</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">High-performance firmware and hardware architecture design for critical applications.</p>
+                    <div class="mono" style="margin-top: 1.5rem;">
+                        <div class="clickable-point" data-detail="EMB_RTOS" data-title="RTOS Optimization">
+                            <i data-lucide="plus"></i> <span>RTOS Optimization</span>
+                        </div>
+                        <div class="clickable-point" data-detail="EMB_DRIVERS" data-title="Low-Level Driver Development">
+                            <i data-lucide="plus"></i> <span>Driver Development</span>
+                        </div>
+                        <div class="clickable-point" data-detail="EMB_POWER" data-title="Power Management">
+                            <i data-lucide="plus"></i> <span>Power Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="padding: 3rem; border-radius: var(--border-radius-md);">
+                    <i data-lucide="layers" style="width: 40px; height: 40px; color: var(--accent-violet); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">PCB Design</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Precision multi-layer PCB layout and prototyping for complex electronic systems.</p>
+                    <div class="mono" style="margin-top: 1.5rem;">
+                        <div class="clickable-point" data-detail="PCB_RF" data-title="RF Impedance Matching">
+                            <i data-lucide="plus"></i> <span>RF Matching</span>
+                        </div>
+                        <div class="clickable-point" data-detail="PCB_THERMAL" data-title="Thermal Analysis">
+                            <i data-lucide="plus"></i> <span>Thermal Analysis</span>
+                        </div>
+                        <div class="clickable-point" data-detail="PCB_DFM" data-title="DFM/DFA Compliance">
+                            <i data-lucide="plus"></i> <span>DFM Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for details -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <i data-lucide="x" class="modal-close" id="modalClose"></i>
+            <div id="modalBody">
+                <h2 id="modalTitle" style="margin-bottom: 1.5rem; font-size: 2.5rem;">Detail Title</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                    <div id="modalDesc" style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                        Detail description goes here.
+                    </div>
+                    <div id="modalVisual" class="glass" style="height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: var(--bg-tertiary);">
+                        <i data-lucide="image" style="width: 60px; height: 60px; color: var(--text-muted);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 100px 0 50px; border-top: 1px solid var(--bg-tertiary); background: #0F172A; color: white;">
+        <div class="container" style="text-align: center;">
+            <div class="mono" style="color: var(--accent-blue); margin-bottom: 1rem;">Owner: Lokesh</div>
+            <p style="color: var(--text-muted); font-size: 0.8rem;">&copy; 2026 VELTRONICS SYSTEMS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script>
+        lucide.createIcons();
+        
+        // Modal Content Database
+        const modalData = {
+            'IOT_SECURE': 'Our secure bootstrapping process ensures that every device in your network is authenticated and encrypted from the moment it powers on. We use hardware-based root-of-trust to prevent unauthorized access.',
+            'IOT_OTA': 'Remote firmware management is critical. Our OTA solution provides differential updates, rollback safety, and multi-region deployment to keep your global fleet up to date without physical intervention.',
+            'IOT_EDGE': 'Minimize bandwidth costs and latency by processing data locally. We implement edge logic that filters noise and triggers immediate actions before data even reaches the cloud.',
+            'EMB_RTOS': 'We optimize Real-Time Operating Systems like FreeRTOS and Zephyr for minimum footprint and maximum performance, ensuring deterministic behavior for mission-critical tasks.',
+            'EMB_DRIVERS': 'Custom driver development for specialized peripherals. We write efficient HAL and LL drivers for everything from high-speed ADCs to complex motor controllers.',
+            'EMB_POWER': 'Battery life is paramount. We implement deep-sleep states, dynamic frequency scaling, and power-gating strategies to maximize device longevity in the field.',
+            'PCB_RF': 'Our RF engineering team handles complex antenna matching, EMI shielding, and signal path optimization for WiFi, BLE, and cellular connectivity.',
+            'PCB_THERMAL': 'Advanced thermal simulation prevents hot spots. We use via stitching, heat sinks, and optimized component placement to manage high-power electronics.',
+            'PCB_DFM': 'Design for Manufacturability (DFM) ensures that your product is ready for mass production without costly re-spins. We work closely with fab houses from day one.'
+        };
+
+        const modal = document.getElementById('detailModal');
+        const modalClose = document.getElementById('modalClose');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDesc = document.getElementById('modalDesc');
+
+        document.querySelectorAll('.clickable-point').forEach(point => {
+            point.addEventListener('click', () => {
+                const id = point.getAttribute('data-detail');
+                const title = point.getAttribute('data-title');
+                modalTitle.innerText = title;
+                modalDesc.innerText = modalData[id] || 'Content under development.';
+                modal.classList.add('active');
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                modal.classList.remove('active');
+            }
+        };
+    </script>
+</body>
+</html>

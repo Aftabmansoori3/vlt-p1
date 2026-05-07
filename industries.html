@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries & Case Studies | NexGen IoT</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="/" class="logo">
+                <img src="/assets/images/logo.png" alt="Veltronics Logo" style="height: 55px; width: auto;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/industries.html" style="color: var(--accent-blue);">Industries</a></li>
+                <li><a href="/career.html">Career</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Partner With Us</a>
+        </div>
+    </nav>
+
+    <header class="section-padding" style="padding-top: 160px; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="reveal">
+                <div class="mono" style="color: var(--accent-violet); margin-bottom: 1rem;">[ Vertical Market Solutions ]</div>
+                <h1 style="font-size: 4rem; letter-spacing: -2px;">Industry <span class="gradient-text">Specializations</span></h1>
+                <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin-top: 1rem;">
+                    We deliver domain-specific hardware intelligence across the world's most critical sectors. Click on specializations to learn more.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+                
+                <!-- Industry 1: Healthcare -->
+                <div class="industry-card reveal glass" style="padding: 3rem; border-radius: var(--border-radius-lg); border-left: 4px solid var(--accent-blue);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <i data-lucide="activity" style="color: var(--accent-blue); width: 32px; height: 32px;"></i>
+                        <h3 style="font-size: 1.5rem;">IoMT & Healthcare</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Deploying mission-critical wireless medical devices and remote patient monitoring systems.</p>
+                    <div class="mono" style="font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); padding-top: 1.5rem;">
+                        <div class="clickable-point" data-detail="IND_HEALTH" data-title="Medical Compliance">
+                            <i data-lucide="plus"></i> <span>Medical Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry 2: Industrial -->
+                <div class="industry-card reveal glass" style="padding: 3rem; border-radius: var(--border-radius-lg); border-left: 4px solid var(--accent-violet);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <i data-lucide="factory" style="color: var(--accent-violet); width: 32px; height: 32px;"></i>
+                        <h3 style="font-size: 1.5rem;">Industrial Automation</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">IIoT solutions for Industry 4.0, optimizing manufacturing and asset tracking.</p>
+                    <div class="mono" style="font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); padding-top: 1.5rem;">
+                        <div class="clickable-point" data-detail="IND_MANU" data-title="Smart Manufacturing">
+                            <i data-lucide="plus"></i> <span>Smart Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry 3: Energy -->
+                <div class="industry-card reveal glass" style="padding: 3rem; border-radius: var(--border-radius-lg); border-left: 4px solid var(--accent-cyan);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <i data-lucide="zap" style="color: var(--accent-cyan); width: 32px; height: 32px;"></i>
+                        <h3 style="font-size: 1.5rem;">Smart Grid & Utilities</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Advanced metering infrastructure and renewable energy monitoring systems.</p>
+                    <div class="mono" style="font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); padding-top: 1.5rem;">
+                        <div class="clickable-point" data-detail="IND_ENERGY" data-title="Utility Monitoring">
+                            <i data-lucide="plus"></i> <span>Utility Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for details -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <i data-lucide="x" class="modal-close" id="modalClose"></i>
+            <div id="modalBody">
+                <h2 id="modalTitle" style="margin-bottom: 1.5rem; font-size: 2.5rem;">Detail Title</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                    <div id="modalDesc" style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                        Detail description goes here.
+                    </div>
+                    <div id="modalVisual" class="glass" style="height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: var(--bg-tertiary);">
+                        <i data-lucide="image" style="width: 60px; height: 60px; color: var(--text-muted);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 80px 0 40px; border-top: 1px solid var(--bg-tertiary); background: #0F172A; color: white;">
+        <div class="container" style="text-align: center;">
+            <div class="mono" style="color: var(--accent-blue); margin-bottom: 1rem;">Owner: Lokesh</div>
+            <p style="color: var(--text-muted); font-size: 0.8rem;">&copy; 2026 VELTRONICS SYSTEMS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

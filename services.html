@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Services | Veltronics Systems</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="/" class="logo">
+                <img src="/assets/images/logo.png" alt="Veltronics Logo" style="height: 55px; width: auto;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/services.html" style="color: var(--accent-blue);">Services</a></li>
+                <li><a href="/industries.html">Industries</a></li>
+                <li><a href="/career.html">Career</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Request Architecture</a>
+        </div>
+    </nav>
+
+    <header class="section-padding" style="padding-top: 160px; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="reveal">
+                <div class="mono" style="color: var(--accent-blue); margin-bottom: 1rem;">[ Engineering Matrix v4.0 ]</div>
+                <h1 style="font-size: 4rem; letter-spacing: -2px;">Technical <span class="gradient-text">Capabilities</span></h1>
+                <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin-top: 1rem;">
+                    Veltronics provides full-stack hardware and software excellence, led by <strong>Lokesh</strong>, adhering to rigorous industry standards for performance and security.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+                <!-- Service 1: IoT -->
+                <div class="service-card reveal" style="padding: 3.5rem; border-radius: var(--border-radius-md);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <i data-lucide="microscope" style="color: var(--accent-blue); width: 48px; height: 48px;"></i>
+                        <span class="mono" style="font-size: 0.7rem; color: var(--text-muted);">ID: SV-IOT-01</span>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">IoT Ecosystem Development</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+                        Developing robust IoT architectures from device to cloud. We specialize in low-power wide-area networks (LPWAN), cellular IoT (NB-IoT, Cat-M1), and high-throughput WiFi/Ethernet solutions. Our software stacks ensure seamless data ingestion and visualization.
+                    </p>
+                    <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px;">
+                        <h4 class="mono" style="font-size: 0.75rem; margin-bottom: 1rem; color: var(--accent-blue);">Core Technologies</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">MQTT/TLS</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">LoRaWAN</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">AWS IoT Core</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">Digital Twins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Embedded -->
+                <div class="service-card reveal" style="padding: 3.5rem; border-radius: var(--border-radius-md);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <i data-lucide="circuit-board" style="color: var(--accent-cyan); width: 48px; height: 48px;"></i>
+                        <span class="mono" style="font-size: 0.7rem; color: var(--text-muted);">ID: SV-EMB-02</span>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Embedded Systems Design</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+                        Hardware-level engineering with a focus on real-time responsiveness. We develop custom Board Support Packages (BSP), device drivers, and application firmware for a variety of microcontrollers and processors.
+                    </p>
+                    <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px;">
+                        <h4 class="mono" style="font-size: 0.75rem; margin-bottom: 1rem; color: var(--accent-cyan);">Architecture Stack</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">FreeRTOS</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">ARM Cortex-M</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">C/C++17</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">Bare-metal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: PCB -->
+                <div class="service-card reveal" style="padding: 3.5rem; border-radius: var(--border-radius-md);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <i data-lucide="layers" style="color: var(--accent-violet); width: 48px; height: 48px;"></i>
+                        <span class="mono" style="font-size: 0.7rem; color: var(--text-muted);">ID: SV-PCB-03</span>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Advanced PCB Layout</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+                        High-density interconnect (HDI) PCB design for complex electronics. Our process includes comprehensive EMI/EMC simulation, signal integrity analysis, and manufacturability optimization (DFM).
+                    </p>
+                    <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px;">
+                        <h4 class="mono" style="font-size: 0.75rem; margin-bottom: 1rem; color: var(--accent-violet);">Design Standards</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">Altium Designer</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">IPC Class 3</span>
+                            <span class="glass" style="padding: 4px 12px; font-size: 0.75rem; border-radius: 4px;">Impedance Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 80px 0 40px; border-top: 1px solid var(--bg-tertiary); background: #0F172A; color: white;">
+        <div class="container" style="text-align: center;">
+            <div class="mono" style="color: var(--accent-blue); margin-bottom: 1rem;">Owner: Lokesh</div>
+            <p style="color: var(--text-muted); font-size: 0.8rem;">&copy; 2026 VELTRONICS SYSTEMS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

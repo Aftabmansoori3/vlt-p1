@@ -38,7 +38,7 @@ function updateHeroData() {
         const temp = (Math.random() * 5 + 35).toFixed(1);
         
         dataOverlay.innerHTML = `
-            NX-9000 SERIES<br>
+            VLT-9000 SERIES<br>
             CORE: DUAL 32-BIT<br>
             WIRELESS: WIFI/BLE 5.2<br>
             STATUS: ${randomStatus}<br>
